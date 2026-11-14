@@ -175,6 +175,20 @@ footer {
 }
 </style>
 </head>
+  <style>
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+</style>
+
+<script>
+  document.querySelectorAll("aside").forEach(element => element.remove());
+
+  const footer = document.querySelector(".footer-inner");
+  if (footer) {
+    footer.textContent = "© 2025 by Despina Karagiannidoy";
+  }
+</script>
 <body>
 
 <header>
